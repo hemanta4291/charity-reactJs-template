@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import UseDarkMode from "./hooks/useDarkMode/UseDarkMode";
 function App() {
+  const [colorTheme,setTheme]= UseDarkMode()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container mx-auto">
+        <div onClick={()=>setTheme(colorTheme)}>
+        { 
+          colorTheme === "dark" ? 
+          <div >Dark</div> :
+          <div>light</div>
+
+        }
+        </div>
+        <div className="md:columns-3 sm:columns-2 dark:bg-primary">
+          <div className="colum">455</div>
+          <div className="colum">455</div>
+          <div className="colum">455</div>
+        </div>
+        
     </div>
   );
 }
