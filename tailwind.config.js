@@ -22,25 +22,66 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      'white': '#ffffff',
+      'black': '#000',
+      'purple': '#3f3cbb',
+      'midnight': '#121063',
+      'metal': '#565584',
+      'tahiti': '#3ab7bf',
+      'silver': '#ecebff',
+      'bubble-gum': '#ff77e9',
+      'bermuda': '#78dcca',
+
       'primary': '#DA291C;',
       'primary-container': '#FFDAD4',
       'on-primary-container': '#7E1810',
+      'on-primary-opacity-0.8' : 'rgba(255, 255, 255, 0.08)',
+      'on-primary-opacity-0.16' : 'rgba(255, 218, 212, 0.16)',
       'secondary': '#009CA6',
       'secondary-container': '#7DF4FF',
       'on-secondary-container': '#00727A',
       'tertiary': '#FDAE2D',
+      'gray-700' :'#434343',
+      'gray-900' : 'rgba(31, 31, 31, 1)'
+      
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
     extend: {
+      flexBasis: {
+        '40%': '40%',
+        '20%': '20%',
+        '50%': '50%',
+        '60%': '60%',
+        '30%': '30%',
+        '70%': '70%',
+        '80%': '80%',
+      },
       spacing: {
         '8xl': '96rem',
         '9xl': '128rem',
       },
+      height: {
+        '237': '59rem',
+      },
+      lineHeight: {
+        '21': '5rem',
+      },
+      maxHeight: {
+        '237': '59rem',
+      },
       borderRadius: {
         '4xl': '2rem',
+        'custom-100':'24px 24px 24px 100px'
+      },
+      letterSpacing: {
+        "0.5" : '0.031rem',
+        "1.25" : '0.078rem',
+
       }
     },
   },

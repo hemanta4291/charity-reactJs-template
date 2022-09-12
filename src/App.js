@@ -1,23 +1,14 @@
 import UseDarkMode from "./hooks/useDarkMode/UseDarkMode";
+import { BrowserRouter } from "react-router-dom";
+import Main from "./layout/main/Main";
 function App() {
   const [colorTheme,setTheme]= UseDarkMode()
   return (
-    <div className="container mx-auto">
-        <div onClick={()=>setTheme(colorTheme)}>
-        { 
-          colorTheme === "dark" ? 
-          <div >Dark</div> :
-          <div>light</div>
-
-        }
-        </div>
-        <div className="md:columns-3 sm:columns-2 dark:bg-primary">
-          <div className="colum">455</div>
-          <div className="colum">455</div>
-          <div className="colum">455</div>
-        </div>
-        
-    </div>
+      <div className="App">
+          <BrowserRouter>
+            <Main/>
+          </BrowserRouter>
+      </div>
   );
 }
 
