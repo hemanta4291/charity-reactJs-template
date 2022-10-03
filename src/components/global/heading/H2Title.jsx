@@ -9,10 +9,11 @@ const H2Title = ({
     p="",
     fontSize="text-xl lg:text-5xl md:text-3xl",
     fontWeight="font-bold",
-    lineHeight=""
+    lineHeight="",
+    customClass=""
 }) => {
   return (
-        <h4 className={`${maxWidth} ${lineHeight} ${fontWeight} ${color} ${darkColor} ${m} ${p} ${fontSize} m-0 break-words`}>{title}</h4>
+        <h4 className={`${customClass+ " " +maxWidth+" "+lineHeight+" "+fontWeight+" "+color+" "+darkColor+" "+m+" "+p+" "+fontSize} m-0 break-words`}>{title}</h4>
   )
 }
 

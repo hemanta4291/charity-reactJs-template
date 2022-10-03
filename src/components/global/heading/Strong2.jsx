@@ -8,10 +8,11 @@ const Strong2 = ({
     p="",
     fontSize="text-base",
     fontWeight="font-bold",
-    lineHeight=""
+    lineHeight="",
+    customClass=''
 }) => {
   return (
-        <h5 className={`${lineHeight} ${fontWeight} ${color} ${darkColor} ${m} ${p} ${fontSize} m-0 break-words`}>{title}</h5>
+        <h5 className={`${customClass+' '+lineHeight} ${fontWeight} ${color} ${darkColor} ${m} ${p} ${fontSize} m-0 break-words`}>{title}</h5>
   )
 }
 

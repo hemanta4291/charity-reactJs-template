@@ -6,12 +6,13 @@ const Body1 = ({
     darkColor="",
     m="",
     p="",
-    fontSize="text-base",
+    fontSize="text-lg",
     fontWeight="font-normal",
-    lineHeight="leading-7"
+    lineHeight="leading-7",
+    customClass=""
 }) => {
   return (
-        <p className={`${lineHeight} ${fontWeight} ${color} ${darkColor} ${m} ${p} ${fontSize} m-0 break-words`}>{children}</p>
+        <p className={`${customClass+" "+lineHeight+" "+fontWeight+" "+color+" "+darkColor+" "+fontSize+" "+m+" "+p} m-0 break-words`}>{children}</p>
   )
 }
 

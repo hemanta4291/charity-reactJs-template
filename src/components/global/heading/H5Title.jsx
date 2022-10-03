@@ -6,12 +6,13 @@ const H5Title = ({
     darkColor="",
     m="",
     p="",
-    fontSize="text-2xl",
+    fontSize="text-lg sm:text-2xl",
     fontWeight="font-bold",
-    lineHeight=""
+    lineHeight="",
+    CustomClass=''
 }) => {
   return (
-        <h5 className={`${lineHeight} ${fontWeight} ${color} ${darkColor} ${m} ${p} ${fontSize} m-0 break-words`}>{title}</h5>
+        <h5 className={`${CustomClass+ " " +lineHeight} ${fontWeight} ${color} ${darkColor} ${m} ${p} ${fontSize} m-0 break-words`}>{title}</h5>
   )
 }
 

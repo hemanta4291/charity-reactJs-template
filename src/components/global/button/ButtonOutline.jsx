@@ -2,12 +2,12 @@ import React from 'react'
 
 const ButtonOutline = ({
     children= {},
-    color= "text-tertiary",
-    // borderColor = "border-tertiary ",
-    bgColor = "transparent",
+    color= "text-tertiary hover:text-gray-800",
+    transition='transition-all',
+    duration='duration-0.5',
+    bgColor = "transparent hover:bg-tertiary",
     border="border-2",
-    bgHover="hover:bg-tertiary",
-    textHover="hover:text-white",
+    borderColor="text-tertiary hover:border-tertiary",
     ptb="py-2",
     plr= "px-6",
     round ="rounded-3xl",
@@ -16,7 +16,7 @@ const ButtonOutline = ({
     letterSpacing = "tracking-0.5"
 }) => {
   return (
-    <button className={`${textHover + " " + border + " " + letterSpacing+ " " + color + " " + bgColor + " " + bgHover + " " + ptb + 
+    <button className={`${transition+" "+ duration+" " +borderColor+" "+border + " " + letterSpacing+ " " + color + " " + bgColor + " " + ptb + 
     " " + plr + " " + round + " " + fontSize + " " + fontWeight }`}>{children}</button>
   )
 }

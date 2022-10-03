@@ -7,7 +7,7 @@ const Main = () => {
         <>
             <Header/>
             <AppRouter />
-            {/* <Footer/> */}
+            <Footer/>
           
         </>
     )

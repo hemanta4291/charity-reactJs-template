@@ -11,7 +11,7 @@ const PreHeader = ({
     lineHeight=""
 }) => {
   return (
-        <h4 className={`${lineHeight} ${fontWeight} ${color} ${darkColor} ${m} ${p} ${fontSize} m-0 break-words`}>{title}</h4>
+        <h4 className={`${lineHeight} ${fontWeight} ${color} ${darkColor} ${m} ${p} ${fontSize} m-0 break-words uppercase tracking-widest`}>{title}</h4>
   )
 }
 

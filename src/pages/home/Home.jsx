@@ -1,43 +1,35 @@
-import React from 'react'
-import ButtonContained from '../../components/global/button/ButtonContained'
-import Body1 from '../../components/global/heading/Body1'
-import H2Title from '../../components/global/heading/H2Title'
-import PreHeader from '../../components/global/heading/PreHeader'
+import React,{useEffect} from 'react'
 import Slider from '../../components/slider/Slider'
-import TopCountSection from '../../components/topCountSection/TopCountSection'
-import aboutImg from '../../assets/images/about.jpeg'
+import TopCountSection from '../../components/section/topCountSection/TopCountSection'
+import AboutSecetion from '../../components/section/aboutSection/AboutSecetion'
+import MissionSection from '../../components/section/missionSection/MissionSection'
+import Campaign from '../../components/section/campaignSection/Campaign'
+import DecauseWeCam from '../../components/section/decauseWeCan/DecauseWeCam'
+import UpcommingEvent from '../../components/section/upcommingEvent/UpcommingEvent'
+import MeetOurTeam from '../../components/section/meetOurTeam/MeetOurTeam'
+import BecomeYoutuber from '../../components/section/becomeYoutuber/BecomeYoutuber'
+import Feature from '../../components/section/feature/Feature'
+import LatestNews from '../../components/section/letestNews/LatestNews'
+import BrandSection from '../../components/section/brandSection/BrandSection'
 
 const Home = () => {
+  useEffect(()=>{
+    document.title="Home"
+  },[])
   return (
         <div className='home'>
           <Slider/>
-          <div className='bg-on-primary-opacity-0.16'>
-            <div className='container mb-8 mx-auto px-4'>
-                <TopCountSection mt="-mt-10"/>
-            </div>
-            <div className='container mx-auto px-4 mb-40'>
-              <PreHeader title="About Us"/>
-              <H2Title p="pt-1" maxWidth="max-w-xl" title="Our Highest Ambition is to Help People"/>
-              <div className='flex justify-between pb-14'>
-                  <div className='basis-80%'>
-                      <Body1 color='text-gray-700' p="pt-2">
-                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id augue semper arcu enim viverra sit ipsum. Nunc lorem a vulputate eget bibendum id et. Eget nunc, eu, molestie tellus sollicitudin vitae consequat adipiscing. Mauris sit quam est dui vitae. Leo, a platea quis at.
-                    </Body1>
-                  </div>
-                  <div className='basis-20% flex justify-end items-center'>
-                    <ButtonContained>Medium</ButtonContained>
-                  </div>
-              </div>
-
-              <div>
-                <img className='border-b-8 border-primary rounded-custom-100' src={aboutImg} alt="" />
-              </div>
-              <TopCountSection/>
-              
-            </div>
-          </div>
-          
-         
+          <TopCountSection  positon="relative -top-24"/>
+          <AboutSecetion wrCustomClass=" py-12 sm:py-20"/>
+          <BrandSection wrCustomClass="pb-20"/>
+          <MissionSection wrCustomClass="py-12 sm:py-20"/>
+          <Campaign wrCustomClass="py-12 sm:py-20"/>
+          <DecauseWeCam wrCustomClass="pb-12 sm:pb-20"/>
+          <UpcommingEvent/>
+          <MeetOurTeam wrCustomClass="py-12 sm:py-20" />
+          <BecomeYoutuber wrCustomClass="py-16 sm:py-28 md:py-60 mb-12  sm:mb-20"/>
+          <Feature/>
+          <LatestNews wrCustomClass="pt-12 sm:pt-20 pb-12 sm:pb-20 2xl:pb-32"/>
         </div>
   )
 }
