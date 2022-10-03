@@ -3,6 +3,8 @@
     transition: all linear 0.3s;
     visibility: hidden;
     overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(18, 18, 18, 0.24);
+    border-radius: 10px;
 }
 .customNavMenu:hover .customNavMenu_droupdown{
     transform: translateX(0%);
