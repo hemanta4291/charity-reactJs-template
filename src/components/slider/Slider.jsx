@@ -11,7 +11,7 @@ const Slider = () => {
         <div style={{backgroundImage: `url(${sliderImg})`}} className=" pt-20 pb-36 sm:pt-0 sm:pb-0 sm:h-155 lg:h-237 flex items-center bg-cover bg-no-repeat bg-center">
             <div className='container mx-auto'>
                 <div className='max-w-2xl text-white px-4 text-center lg:text-left'>
-                    <H4Title title="Homeless Child dfdsfdsfs"/>
+                    <H4Title title="Homeless Child"/>
                     <H1Title CustomClass='py-2 md:py-0' title="Giving help to those
                         who need it" />
                     <Body1>
