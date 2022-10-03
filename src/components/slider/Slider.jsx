@@ -1,5 +1,5 @@
 import React from 'react'
-import sliderImg from '../../assets/slider.jpeg'
+import sliderImg from '../../assets/images/slider.jpeg'
 import ButtonContained from '../global/button/ButtonContained'
 import ButtonOutline from '../global/button/ButtonOutline'
 import Body1 from '../global/heading/Body1'

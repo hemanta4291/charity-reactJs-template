@@ -8,7 +8,7 @@ import ProgressLise from '../../components/global/progressLine/ProgressLise'
 import BecomeYoutuber from '../../components/section/becomeYoutuber/BecomeYoutuber'
 import Feature from '../../components/section/feature/Feature'
 import LatestNews from '../../components/section/letestNews/LatestNews'
-import campaignImg1 from '../../assets/images/campaign1.jpeg'
+import causeDetailsImg from '../../assets/images/cause-details.jpeg'
 import H5Title from '../../components/global/heading/H5Title'
 import latestPost1 from '../../assets/images/latest-details1.jpeg'
 import latestPost2 from '../../assets/images/latest-details2.jpeg'
@@ -17,15 +17,14 @@ import H2Title from '../../components/global/heading/H2Title'
 import Social from '../../components/global/social/Social'
 import Icons from '../../components/global/Icons'
 import commentImg from '../../assets/images/comment.jpeg'
-import commentImg1 from '../../assets/images/comment1.jpeg'
 import ButtonContained from '../../components/global/button/ButtonContained'
 import H4Title from '../../components/global/heading/H4Title'
-import Form from '../../components/global/form/Form'
+
 
 
   const item = {
         id:1,
-        image:campaignImg1,
+        image:causeDetailsImg,
         tag:'Children',
         btnTitle:"Donate Now",
         subtitle:"Iodine fortification of household salt",
