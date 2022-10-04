@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import whiteLogo from '../../assets/images/white-logo.png'
 import ButtonContained from '../../components/global/button/ButtonContained'
@@ -10,13 +11,26 @@ import Icons from '../../components/global/Icons'
 import Social from '../../components/global/social/Social'
 
 const Footer = () => {
+  const [bottomClass, setBootomClass] = useState(false)
+  const scrollHandleScroll = () => {
 
+    if (window.scrollY > 500) {
+        setBootomClass(true)
+    } else {
+        setBootomClass(false)
+    }
+
+  }
   const upToTopWindow = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
     })
   }
+
+  useEffect(() => {
+    window.addEventListener('scroll', scrollHandleScroll);
+  },[]);
   return (
     <div className='bg-gray-900 pt-20'>
         <div className='container mx-auto px-4'>
@@ -85,6 +99,14 @@ const Footer = () => {
                 </div>
             </div>
         </div>
+
+        <div className={`${!bottomClass && 'hidden '} cursor-pointer fixed bottom-10 z-40 right-6 w-12 h-12 bg-gray-800 rounded-lg border-2 border-white flex items-center justify-center`} onClick={upToTopWindow}>
+          <svg width="10" height="22" viewBox="0 0 10 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.67033 0.128333L0.215333 5.01417C0.105333 5.15167 0.0869993 5.29833 0.151166 5.46333C0.215333 5.62833 0.343666 5.70167 0.517833 5.70167H3.37783V21.5967C3.37783 21.7158 3.4145 21.8167 3.48783 21.89C3.56117 21.9633 3.662 22 3.78117 22H6.22867C6.34783 22 6.44867 21.9633 6.522 21.89C6.59533 21.8167 6.632 21.7158 6.632 21.5967V5.70167H9.48283C9.657 5.70167 9.77617 5.61917 9.8495 5.46333C9.91367 5.29833 9.89533 5.15167 9.77617 5.01417L5.27533 0.128333C5.18367 0.0458333 5.08283 0 4.96367 0C4.85367 0 4.75283 0.0458333 4.67033 0.128333Z" fill="white"/>
+          </svg>
+
+        </div>
+
     </div>
   )
 }
