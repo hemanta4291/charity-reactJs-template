@@ -10,7 +10,7 @@ const LatestBox = ({ item }) => {
     return (
         <div className='group overflow-hidden'>
             <div className=' h-auto sm:min-h-80 '>
-                <img className="h-full sm:min-h-80 w-full group-hover:scale-110 transition-all duration-0.5 rounded-t-md" src={img} alt="latest" />
+                <img className="object-cover h-full sm:min-h-80 w-full group-hover:scale-110 transition-all duration-0.5 rounded-t-md" src={img} alt="latest" />
             </div>
             <div className='bg-white relative'>
                 <div className='flex gap-5 pt-6'>

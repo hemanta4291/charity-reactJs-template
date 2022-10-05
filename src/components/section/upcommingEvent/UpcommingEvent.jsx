@@ -62,7 +62,7 @@ const UpcommingEvent = ({wrCustomClass=""}) => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id augue semper arcu enim viverra sit ipsum. Nunc lorem a vulputate eget bibendum id et. Eget nunc, eu, molestie tellus sollicitudin vitae consequat adipiscing. 
             </Body1>
         </div>
-        <div className='relative'>
+        <div className='relative  pb-0 md:pb-12'>
            <div className='mb-4 lg:mb-0 lg:absolute h-full top-0 left-0 lg:pr-10 w-full lg:w-1/2'>
               <img className='px-5 md:px-0 rounded-br-100 object-cover h-full w-full' src={upcommingImg} alt="decause" />
            </div>

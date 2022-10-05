@@ -97,7 +97,7 @@ const Feature = ({wrCustomClass=""}) => {
             </Body1>
             
         </div>
-        <div className='relative '>
+        <div className='relative pb-0 md:pb-12'>
         <div className='container mx-auto px-4 pt-0 lg:pt-24 lg:pb-32'> 
            <div className='grid grid-cols-1 lg:grid-cols-2 gap-0 md:gap-6'>
             <Slider1 {...settings}>
@@ -109,7 +109,7 @@ const Feature = ({wrCustomClass=""}) => {
            </div> 
           </div>
           <div className='overflow-hidden lg:absolute left-1/2 top-0 lg:w-1/2 h-full pt-20 lg:pt-0 px-5 lg:px-0'>
-              <img className=' lg:ml-10 rounded-bl-100 w-full h-full' src={featureImg} alt="decause" />
+              <img className='object-cover lg:ml-10 rounded-bl-100 w-full h-full' src={featureImg} alt="decause" />
           </div>
         </div>
         

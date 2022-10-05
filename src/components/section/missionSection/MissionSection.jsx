@@ -10,7 +10,7 @@ const MissionSection = ({wrCustomClass}) => {
         <div className={`${wrCustomClass} container mx-auto px-4`}>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
                 <div>
-                    <img className='rounded-bra-100' src={missionImg}  alt="img"/>
+                    <img className='rounded-bra-100 object-cover' src={missionImg}  alt="img"/>
                 </div>
                 <div className='flex justify-center items-center'>
                     <div>
