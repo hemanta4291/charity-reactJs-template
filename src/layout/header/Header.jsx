@@ -116,7 +116,7 @@ const Header = () => {
 
             {renderVeiwMenu}
 
-            <li className='pl-6 flex-shrink-0 text-white flex items-center'>
+            <li className='mt-4 lg:mt-0 pl-6 flex-shrink-0 text-white flex items-center'>
               <ButtonContained borderColor="border-primary hover:border-primary-container" bgColor="bg-primary hover:bg-primary-container" color='text-white hover:text-on-primary-container' hover='hover:bg-primary-container'>Donate Now</ButtonContained>
             </li>
 
