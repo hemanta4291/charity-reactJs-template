@@ -1,9 +1,9 @@
 import React,{useEffect} from 'react'
 import BreadCrumb from '../../components/global/breadCrumb/BreadCrumb'
-import BecomeYoutuber from '../../components/section/becomeYoutuber/BecomeYoutuber'
-import Feature from '../../components/section/feature/Feature'
-import LatestNews from '../../components/section/letestNews/LatestNews'
-import Volunteer from '../../components/section/volunteer/Volunteer'
+import BecomeYoutuber from '../../components/becomeYoutuber/BecomeYoutuber'
+import Feature from '../../components/feature/Feature'
+import LatestNews from '../../components/letestNews/LatestNews'
+import Volunteer from '../../components/volunteer/Volunteer'
 
 
 const BecomeVolunteer = () => {
@@ -28,9 +28,9 @@ const BecomeVolunteer = () => {
     <div className='about_us'>
         <BreadCrumb title="Become a Volunteer" breadCrumbArray={breadCrumbArray}/>
         <Volunteer wrCustomClass="py-12 sm:py-20"/>
-        <BecomeYoutuber wrCustomClass="py-16 sm:py-28 md:py-60 mb-12  sm:mb-20"/>
+        <BecomeYoutuber/>
         <Feature/>
-        <LatestNews wrCustomClass="pt-12 sm:pt-20 pb-12 sm:pb-20 2xl:pb-32"/>
+        <LatestNews/>
     </div>
   )
 }

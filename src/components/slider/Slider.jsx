@@ -1,25 +1,25 @@
 import React from 'react'
 import sliderImg from '../../assets/images/slider.jpeg'
-import ButtonContained from '../global/button/ButtonContained'
-import ButtonOutline from '../global/button/ButtonOutline'
-import Body1 from '../global/heading/Body1'
-import H1Title from '../global/heading/H1Title'
-import H4Title from '../global/heading/H4Title'
 
 const Slider = () => {
   return (
         <div style={{backgroundImage: `url(${sliderImg})`}} className=" pt-20 pb-36 sm:pt-0 sm:pb-0 sm:h-155 lg:h-237 flex items-center bg-cover bg-no-repeat bg-center">
             <div className='container mx-auto'>
                 <div className='max-w-2xl text-white px-4 text-center lg:text-left'>
-                    <H4Title title="Homeless Child"/>
-                    <H1Title CustomClass='py-2 md:py-0' title="Giving help to those
-                        who need it" />
-                    <Body1>
-                        {`We aim to provide groceries, and appliances to low income familes. We need your help.`}
-                    </Body1>
+                    <h4 className='text-tertiary text-2xl sm:text-3xl font-bold m-0 break-words'>Homeless Child</h4>
+                    <h1 className='text-white lg:text-7xl md:text-5xl text-3xl lg:leading-21 font-bold m-0 break-words'>Giving help to those
+                        who need it</h1>
+                    <p className='font-normal text-white text-lg leading-7 m-0 break-words'>
+                        We aim to provide groceries, and appliances to low income familes. We need your help.
+                    </p>
                     <div className='mt-6 sm:flex-row flex-col gap-y-3 flex items-center gap-x-2 sm:gap-x-8 justify-center lg:justify-start'>
-                        <ButtonContained letterSpacing='tracking-1.25'>DONATE NOW</ButtonContained>
-                        <ButtonOutline>JOIN US</ButtonOutline>
+                        <button className='rounded-3xl py-2 px-6 text-base font-bold tracking-1.25 transition-all duration-0.5 text-white hover:text-primary border-2 border-primary bg-primary hover:bg-transparent'>
+                        DONATE NOW
+                        </button>
+                        <button className='rounded-3xl py-2 px-6 text-base font-bold tracking-1.25 transition-all duration-0.5  border-2 text-tertiary hover:text-gray-800 transparent hover:bg-tertiary hover:border-tertiary'>
+                        JOIN US
+                        </button>
+                        
                     </div>
                 </div>
                 

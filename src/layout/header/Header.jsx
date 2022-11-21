@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import Menu from './Menu'
-import ButtonContained from '../../components/global/button/ButtonContained'
 import Icons from '../../components/global/Icons'
 import DropDownList from './DropDownList'
 import whiteLogo from '../../assets/images/white-logo.png'
@@ -117,7 +116,9 @@ const Header = () => {
             {renderVeiwMenu}
 
             <li className='mt-4 lg:mt-0 pl-6 flex-shrink-0 text-white flex items-center'>
-              <ButtonContained borderColor="border-primary hover:border-primary-container" bgColor="bg-primary hover:bg-primary-container" color='text-white hover:text-on-primary-container' hover='hover:bg-primary-container'>Donate Now</ButtonContained>
+              <button className='rounded-3xl py-2 px-6 text-base font-bold tracking-0.5 transition-all duration-0.5 text-white hover:text-on-primary-container border-2 border-primary hover:bg-primary-container bg-primary hover:border-primary-container'>
+                Donate Now
+              </button>
             </li>
 
             {/* for mobile menu */}
@@ -125,9 +126,6 @@ const Header = () => {
               X
             </div>
           </ul>
-
-
-
         </nav>
       </div>
     </div>

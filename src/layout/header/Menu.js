@@ -83,6 +83,12 @@ const Menu = [
                 id:11,
                 title:'Contact Us',
                 to:'/contact-us'
+            },
+            {
+                id:12,
+                title:'Error Page',
+                to:'/error',
+               
             }
         ]
     },
@@ -117,7 +123,8 @@ const Menu = [
                 title:''
             }
         ]
-    }
+    },
+    
 ]
 
 export default Menu;

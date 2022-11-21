@@ -1,5 +1,4 @@
 import React from 'react'
-import H4Title from '../heading/H4Title'
 
 const ProgressLise = ({
     downbg='bg-gray-700',
@@ -10,7 +9,7 @@ const ProgressLise = ({
 }) => {
   return (
     <div>
-        <H4Title title={`${percentage}%`} color={percentageColor} p="pb-2"/>
+        <h4 className={`pb-2 font-bold text-2xl sm:text-3xl m-0 break-words ${percentageColor}`}>{percentage}%</h4>
         <div className='relative'>
             <div className={`${downbg+' '+height} absolute  w-full top-0 left-0`}></div>
             <div style={{width:`${percentage}%`}} className={`${upbg+' '+height} absolute top-0 left-0`}></div>
