@@ -29,7 +29,7 @@ const Home = () => {
           <MeetOurTeam/>
           <BecomeYoutuber/>
           <Feature/>
-          <LatestNews wrCustomClass="pt-12 sm:pt-20 pb-12 sm:pb-20 2xl:pb-32"/>
+          <LatestNews/>
         </div>
   )
 }
