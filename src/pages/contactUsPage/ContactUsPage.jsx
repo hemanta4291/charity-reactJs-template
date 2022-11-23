@@ -4,7 +4,17 @@ import BecomeYoutuber from '../../components/becomeYoutuber/BecomeYoutuber'
 import Feature from '../../components/feature/Feature'
 import LatestNews from '../../components/letestNews/LatestNews'
 import Icons from '../../components/global/Icons'
-import GoogleMapWithMarker from '../../components/global/googleMap/GoogleMapWithMarker'
+import { GoogleMap, LoadScript,Marker } from '@react-google-maps/api';
+
+const containerStyle = {
+  width: '100%',
+  height: '500px'
+};
+
+const center = {
+  lat: -3.745,
+  lng: -38.523
+};
 
 
 const ContactUsPage = () => {
@@ -102,12 +112,15 @@ const ContactUsPage = () => {
 
           </div>
           <div className='pt-12 md:pt-14'>
-            <GoogleMapWithMarker
-              googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
-              loadingElement={<div style={{ height: `100%` }} />}
-              containerElement={<div style={{ height: `400px` }} />}
-              mapElement={<div style={{ height: `100%` }} />}
-            />
+            <LoadScript googleMapsApiKey="">
+              <GoogleMap
+                mapContainerStyle={containerStyle}
+                center={center}
+                zoom={10}
+                >
+                  <Marker  position={center}/>
+              </GoogleMap>
+           </LoadScript>
           </div>
         </div>
       </div>

@@ -1,11 +1,6 @@
 import React, { useEffect } from 'react'
-import {
-  withScriptjs,
-  withGoogleMap,
-  GoogleMap,
-  Marker,
-} from "react-google-maps";
 import { Link } from 'react-router-dom';
+import { GoogleMap, LoadScript,Marker } from '@react-google-maps/api';
 import BreadCrumb from '../../components/global/breadCrumb/BreadCrumb'
 import BecomeYoutuber from '../../components/becomeYoutuber/BecomeYoutuber'
 import Feature from '../../components/feature/Feature'
@@ -16,18 +11,15 @@ import Icons from '../../components/global/Icons';
 
 
 
-const MapWithAMarker = withScriptjs(withGoogleMap(props =>
-  <GoogleMap
-    defaultZoom={8}
-    defaultCenter={{ lat: -34.397, lng: 150.644 }}
-  >
-    <Marker
-      position={{ lat: -34.397, lng: 150.644 }}
-    />
-  </GoogleMap>
-));
+const containerStyle = {
+  width: '100%',
+  height: '400px'
+};
 
-
+const center = {
+  lat: -3.745,
+  lng: -38.523
+};
 
 const EventDetailPage = () => {
 
@@ -129,11 +121,15 @@ const EventDetailPage = () => {
                   </Link>
                 </div>
               </div>
-              <MapWithAMarker
-                googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
-                loadingElement={<div style={{ height: `100%` }} />}
-                containerElement={<div style={{ height: `400px` }} />}
-                mapElement={<div style={{ height: `100%` }} />} />
+              <LoadScript googleMapsApiKey="">
+                <GoogleMap
+                  mapContainerStyle={containerStyle}
+                  center={center}
+                  zoom={10}
+                  >
+                    <Marker  position={center}/>
+                </GoogleMap>
+              </LoadScript>
             </div>
           </div>
         </div>
