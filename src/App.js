@@ -31,7 +31,7 @@ function App() {
             visible={true}
           />
           :
-          <BrowserRouter>
+          <BrowserRouter basename="/devCherityDonation">
           <Main/>
          </BrowserRouter>
         }
