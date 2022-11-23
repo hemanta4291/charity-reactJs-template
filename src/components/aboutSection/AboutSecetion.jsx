@@ -36,7 +36,7 @@ const AboutSecetion = () => {
         <h4 className='font-bold m-0 break-words text-xl lg:text-5xl md:text-3xl text-gray-900 max-w-xl'>Our Highest Ambition is to Help People</h4>
         <div className='flex flex-col lg:flex-row justify-between pb-14'>
           <div className='basis-80%'>
-            <p className='text-gray-700 pt-2 leading-7 font-normal text-lg text-white m-0 break-words'>
+            <p className='text-gray-700 pt-2 leading-7 font-normal text-lg m-0 break-words'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id augue semper arcu enim viverra sit ipsum. Nunc lorem a vulputate eget bibendum id et. Eget nunc, eu, molestie tellus sollicitudin vitae consequat adipiscing. Mauris sit quam est dui vitae. Leo, a platea quis at.
             </p>
           </div>
